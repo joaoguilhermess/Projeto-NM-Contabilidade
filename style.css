@@ -26,39 +26,31 @@ body {
 	height: 100%;
 	width: 100%;
 	flex-direction: column;
-	background-color: rgba(255, 255, 255, 0.05);
 	overflow-y: auto;
 }
 
 header {
-	position: relative;
 	display: flex;
 	height: fit-content;
 	width: 100%;
 	flex-direction: column;
+	padding-block: 25px;
+	gap: 50px;
 	align-items: center;
-	background-color: rgba(0, 0, 0, 1.0);
-	background-image: url("background1.jpg");
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position-y: -100px;
+	background-color: rgba(0, 0, 0, 0.95);
 }
 
 header top {
-	position: relative;
 	display: flex;
 	width: 100%;
 	max-width: 1200px;
-	padding-top: 25px;
 	padding-inline: 50px;
-	padding-bottom: 25px;
-	justify-content: flex-end;
+	/*padding-block: 25px;*/
 }
 
 header top logo {
-	position: absolute;
 	display: flex;
-	left: 50%;
+	margin-left: 50%;
 	transform: translateX(-50%);
 }
 
@@ -73,33 +65,25 @@ header top button {
 	display: flex;
 	height: fit-content;
 	width: fit-content;
+	padding-inline: 30px;
+	padding-block: 10px;
+	margin-left: auto;
 	font-family: "Marcellus";
 	font-size: 16px;
 	font-weight: 400;
-	/*padding: 15px;*/
-	padding-inline: 30px;
-	padding-block: 10px;
-	color: rgba(255, 255, 255, 1.0);
-	/*color: rgba(0, 0, 0, 1.0);*/
 	border-style: solid;
 	border-width: 1px;
 	border-color: #d3c09f5f;
-	/*border-color: rgba(255, 255, 255, 0.5);*/
-	/*border-color: rgba(0, 0, 0, 0.5);*/
+	color: rgba(255, 255, 255, 1.0);
 	background-color: transparent;
-	cursor: pointer;
 	text-transform: uppercase;
+	cursor: pointer;
 	transition-duration: 0.2s;
 }
 
 header top button:hover {
-	/*color: rgba(255, 255, 255, 1.0);
-	border-color: rgba(0, 0, 0, 1.0);
-	background-color: rgba(0, 0, 0, 1.0);*/
-
-	color: rgba(0, 0, 0, 1.0);
-	border-color: rgba(0, 0, 0, 1.0);
-	background-color: rgba(0, 0, 0, 1.0);
+	border-color: #483d39;
+	background-color: #483d39;
 }
 
 header bottom {
@@ -107,182 +91,285 @@ header bottom {
 	width: 100%;
 	max-width: 1200px;
 	padding-inline: 50px;
-	padding-bottom: 50px;
-	gap: 50px;
+	/*padding-block: 25px;*/
 	justify-content: space-between;
 }
 
 header bottom left {
 	display: flex;
 	flex-direction: column;
-	padding-top: 100px;
-	gap: 50px;
+	gap: 25px;
+}
+
+header bottom left column {
+	display: flex;
+	flex-direction: column;
+}
+
+header bottom left column title {
+	display: flex;
+	font-family: "Marcellus";
+	font-size: 35px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
 }
 
 header bottom left button {
 	display: flex;
 	height: fit-content;
 	width: fit-content;
+	padding-inline: 30px;
+	padding-block: 10px;
 	font-family: "Marcellus";
 	font-size: 16px;
 	font-weight: 400;
-	/*padding: 15px;*/
-	padding-inline: 30px;
-	padding-block: 10px;
-	color: rgba(255, 255, 255, 1.0);
-	/*color: rgba(0, 0, 0, 1.0);*/
 	border-style: solid;
 	border-width: 1px;
-	/*border-color: rgba(255, 255, 255, 0.5);*/
 	border-color: #d3c09f5f;
-	/*border-color: rgba(0, 0, 0, 0.5);*/
+	color: rgba(255, 255, 255, 1.0);
 	background-color: transparent;
-	cursor: pointer;
 	text-transform: uppercase;
+	cursor: pointer;
 	transition-duration: 0.2s;
 }
 
-header bottom column {
-	display: flex;
-	flex-direction: column;
-}
-
-header bottom column title {
-	display: flex;
-	font-family: "Marcellus";
-	font-size: 35px;
-	font-weight: 400;
-	color: rgba(255, 255, 255, 1.0);
-	/*color: rgba(0, 0, 0, 1.0);*/
-}
-
-header bottom right title {
-	font-family: "Poppins";
-}
-
-header bottom column title.middle {
-	margin-inline: auto;
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 300;
-	padding-bottom: 15px;
-}
-
-header bottom column text {
-	display: flex;
-	font-family: "Marcellus";
-	font-size: 16px;
-	font-weight: 400;
-	color: rgba(255, 255, 255, 1.0);
-	/*color: rgba(0, 0, 0, 1.0);*/
-	text-transform: uppercase;
+header bottom left button:hover {
+	border-color: #483d39;
+	background-color: #483d39;
 }
 
 header bottom right {
 	display: flex;
-	max-width: fit-content;
 	flex-direction: column;
-	/*gap: 25px;*/
-	padding-top: 100px;
+	gap: 25px;
 }
 
-header bottom right row {
+header bottom right title {
+	display: flex;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+header bottom right column {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+header bottom right column row {
 	display: flex;
 	gap: 50px;
-	padding-bottom: 25px;
 }
 
-header bottom right row button {
+header bottom right column row button {
 	display: flex;
 	height: fit-content;
 	min-width: 270px;
 	max-width: 270px;
+	padding: 30px;
 	justify-content: center;
 	font-family: "Poppins";
 	font-size: 16px;
 	font-weight: 200;
-	padding: 30px;
-	color: rgba(255, 255, 255, 1.0);
-	/*color: rgba(0, 0, 0, 1.0);*/
 	border-style: solid;
 	border-width: 1px;
-	/*border-color: rgba(255, 255, 255, 0.5);*/
 	border-color: #d3c09f5f;
-	/*border-color: rgba(0, 0, 0, 0.5);*/
+	color: rgba(255, 255, 255, 1.0);
 	background-color: transparent;
 	cursor: pointer;
 	transition-duration: 0.2s;
 }
 
 header bottom right row button:hover {
-	color: rgba(255, 255, 255, 1.0);
-	border-color: rgba(0, 0, 0, 1.0);
-	background-color: rgba(0, 0, 0, 1.0);
+	border-color: #483d39;
+	background-color: #483d39;
 }
 
-section {
+section1 {
 	display: flex;
 	height: fit-content;
 	width: 100%;
+	justify-content: center;
+	background-color: #f2f2f2;
+}
+
+section1 center {
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
 	flex-direction: column;
+	padding-inline: 50px;
+	padding-block: 25px;
+	gap: 25px;
 	align-items: center;
-	padding-top: 25px;
-	/*gap: 80px;*/
-	background-color: rgba(0, 0, 0, 0.1);
-	margin-bottom: 5000px;
 }
 
-
-section logo {
+section1 center icon {
 	display: flex;
-	padding-block: 15px;
 }
 
-section logo img {
+section1 center icon img {
 	display: flex;
-	min-height: 35px;
-	max-height: 35px;
+	min-height: 50px;
+	max-height: 50px;
+	object-fit: contain;
 }
 
-section title {
+section1 center title {
 	display: flex;
 	font-family: "Marcellus";
 	font-size: 35px;
 	font-weight: 400;
-	padding-bottom: 50px;
 	color: rgba(0, 0, 0, 1.0);
 }
 
-section column {
+section1 center text {
+	display: flex;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1.0);
+	text-transform: uppercase;
+}
+
+section2 {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+}
+
+section2 center {
+	display: flex;
+	height: fit-content;
+	width: 100%;
+	max-width: 1200px;
+	flex-direction: column;
+	padding-inline: 50px;
+	padding-block: 25px;
+	gap: 100px;
+	align-items: center;
+}
+
+section2 center column {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 50px;
 }
 
-section column text {
+section2 center column text {
 	display: flex;
-	font-family: "Marcellus";
-	font-size: 20px;
+	font-family: "Poppins";
+	font-size: 18px;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 1.0);
 }
 
-section button {
+section2 center button {
 	display: flex;
 	height: fit-content;
 	width: fit-content;
+	padding-inline: 30px;
+	padding-block: 10px;
 	font-family: "Marcellus";
 	font-size: 16px;
 	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
+	background-color: #483d39;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+section2 center button:hover {
+	background-color: rgba(0, 0, 0, 0.95);
+}
+
+section3 {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+}
+
+section3 center {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	max-width: 1200px;
+	padding-inline: 50px;
+	padding-block: 25px;
+	gap: 50px;
+	align-items: center;
+}
+
+section3 center left {
+	display: flex;
+	height: 100%;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 0, 0, 0.25);
+}
+
+section3 center left img {
+	display: flex;
+	max-height: 100%;
+	max-width: 100%;
+	flex-grow: 1;
+	object-fit: contain;
+	background-color: rgba(0, 0, 0, 0.95);
+	aspect-ratio: 9/16;
+}
+
+section3 center right {
+	display: flex;
+	height: 100%;
+	flex-grow: 1;
+	flex-basis: 0;
+	flex-direction: column;
+	gap: 25px;
+	justify-content: center;
+}
+
+section3 center right column {
+	display: flex;
+	flex-direction: column;
+}
+
+section3 center right column title {
+	display: flex;
+	font-family: "Marcellus";
+	font-size: 35px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+section3 center right button {
+	display: flex;
+	height: fit-content;
+	width: fit-content;
 	padding-inline: 30px;
 	padding-block: 10px;
-	margin-bottom: 50px;
-	color: rgba(0, 0, 0, 1.0);
-	border-style: solid;
-	border-width: 1px;
-	border-color: rgba(0, 0, 0, 0.5);
-	background-color: transparent;
-	cursor: pointer;
+	font-family: "Marcellus";
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
+	background-color: #483d39;
 	text-transform: uppercase;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+section3 center right button:hover {
+	background-color: rgba(0, 0, 0, 0.95);
 }
