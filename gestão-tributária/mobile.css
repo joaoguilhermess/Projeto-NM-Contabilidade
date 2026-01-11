@@ -6,6 +6,7 @@ header top {
 header top logo {
 	margin-left: 0px;
 	transform: none;
+	justify-content: center;
 }
 
 header top a {
