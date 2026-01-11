@@ -1,8 +1,8 @@
-class Home {
+class AssessoriaContábil {
 	static Init() {
 		this.addLinks();
 	}
-	
+
 	static addLinks() {
 		const buttons = document.querySelectorAll("button");
 
@@ -18,4 +18,4 @@ class Home {
 	}
 }
 
-Home.Init();
+AssessoriaContábil.Init();

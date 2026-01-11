@@ -92,22 +92,13 @@ header bottom {
 	display: flex;
 	width: 100%;
 	max-width: 1200px;
-	padding-inline: 50px;
-	justify-content: space-between;
-}
-
-header bottom left {
-	display: flex;
 	flex-direction: column;
+	/*align-items: center;*/
+	padding-inline: 50px;
 	gap: 25px;
 }
 
-header bottom left column {
-	display: flex;
-	flex-direction: column;
-}
-
-header bottom left column title {
+header bottom title {
 	display: flex;
 	font-family: "Marcellus";
 	font-size: 35px;
@@ -115,7 +106,20 @@ header bottom left column title {
 	color: rgba(255, 255, 255, 1.0);
 }
 
-header bottom left a {
+header bottom column {
+	display: flex;
+	flex-direction: column;
+}
+
+header bottom column text {
+	display: flex;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
+}
+
+header bottom a {
 	display: flex;
 	height: fit-content;
 	width: fit-content;
@@ -135,59 +139,7 @@ header bottom left a {
 	transition-duration: 0.2s;
 }
 
-header bottom left a:hover {
-	border-color: #483d39;
-	background-color: #483d39;
-}
-
-header bottom right {
-	display: flex;
-	flex-direction: column;
-	gap: 25px;
-}
-
-header bottom right title {
-	display: flex;
-	font-family: "Poppins";
-	font-size: 18px;
-	font-weight: 400;
-	color: rgba(255, 255, 255, 1.0);
-	justify-content: center;
-	text-transform: uppercase;
-}
-
-header bottom right column {
-	display: flex;
-	flex-direction: column;
-	gap: 25px;
-}
-
-header bottom right column row {
-	display: flex;
-	gap: 50px;
-}
-
-header bottom right column row a {
-	display: flex;
-	height: fit-content;
-	min-width: 270px;
-	max-width: 270px;
-	padding: 30px;
-	justify-content: center;
-	font-family: "Poppins";
-	font-size: 16px;
-	font-weight: 200;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #d3c09f5f;
-	color: rgba(255, 255, 255, 1.0);
-	background-color: transparent;
-	cursor: pointer;
-	text-decoration: none;
-	transition-duration: 0.2s;
-}
-
-header bottom right row a:hover {
+header bottom a:hover {
 	border-color: #483d39;
 	background-color: #483d39;
 }
@@ -196,160 +148,24 @@ section1 {
 	display: flex;
 	height: fit-content;
 	width: 100%;
-	justify-content: center;
-	background-color: #f2f2f2;
-}
-
-section1 center {
-	display: flex;
-	width: 100%;
-	max-width: 1200px;
-	flex-direction: column;
-	padding-inline: 50px;
-	padding-block: 25px;
-	gap: 25px;
-	align-items: center;
-}
-
-section1 center icon {
-	display: flex;
-}
-
-section1 center icon img {
-	display: flex;
-	min-height: 50px;
-	max-height: 50px;
-	object-fit: contain;
-}
-
-section1 center title {
-	display: flex;
-	font-family: "Marcellus";
-	font-size: 35px;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 1.0);
-}
-
-section1 center text {
-	display: flex;
-	font-family: "Poppins";
-	font-size: 18px;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 1.0);
-	text-transform: uppercase;
-}
-
-section2 {
-	display: flex;
-	height: 100%;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	background-color: #f2f2f2;
-}
-
-section2 center {
-	display: flex;
-	height: fit-content;
-	width: 100%;
-	max-width: 1200px;
-	flex-direction: column;
-	padding-inline: 50px;
-	padding-block: 25px;
-	gap: 100px;
-	align-items: center;
-}
-
-section2 center column {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-section2 center column text {
-	display: flex;
-	font-family: "Poppins";
-	font-size: 18px;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 1.0);
-}
-
-section2 center a {
-	display: flex;
-	height: fit-content;
-	width: fit-content;
-	padding-inline: 30px;
-	padding-block: 10px;
-	font-family: "Marcellus";
-	font-size: 16px;
-	font-weight: 400;
-	color: rgba(255, 255, 255, 1.0);
-	background-color: #483d39;
-	text-transform: uppercase;
-	cursor: pointer;
-	text-decoration: none;
-	transition-duration: 0.2s;
-}
-
-section2 center a:hover {
-	background-color: rgba(0, 0, 0, 0.95);
-}
-
-section3 {
-	display: flex;
-	height: 100%;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 200px;
-	background-color: #f2f2f2;
-}
-
-section3 center {
-	display: flex;
-	height: 100%;
-	width: 100%;
-	max-width: 1200px;
-	padding-inline: 50px;
 	padding-block: 25px;
 	gap: 50px;
-	align-items: center;
+	margin-bottom: 200px;
+	background-color: #f2f2f2;
 }
 
-section3 center left {
+section1 top {
 	display: flex;
-	height: 100%;
-	flex-grow: 1;
-	flex-basis: 0;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-section3 center left img {
-	display: flex;
-	max-height: 100%;
-	height: 100%;
-	max-width: 100%;
-	object-fit: contain;
-	background-color: rgba(0, 0, 0, 0.95);
-}
-
-section3 center right {
-	display: flex;
-	height: 100%;
-	flex-grow: 1;
-	flex-basis: 0;
+	width: 100%;
+	max-width: 1200px;
 	flex-direction: column;
+	padding-inline: 100px;
 	gap: 25px;
-	justify-content: center;
 }
 
-section3 center right column {
-	display: flex;
-	flex-direction: column;
-}
-
-section3 center right column title {
+section1 top title {
 	display: flex;
 	font-family: "Marcellus";
 	font-size: 35px;
@@ -357,96 +173,60 @@ section3 center right column title {
 	color: rgba(0, 0, 0, 1.0);
 }
 
-section3 center right a {
+section1 top column {
 	display: flex;
-	height: fit-content;
-	width: fit-content;
-	padding-inline: 30px;
-	padding-block: 10px;
-	font-family: "Marcellus";
-	font-size: 16px;
-	font-weight: 400;
-	color: rgba(255, 255, 255, 1.0);
-	background-color: #483d39;
-	text-transform: uppercase;
-	cursor: pointer;
-	text-decoration: none;
-	transition-duration: 0.2s;
-}
-
-section3 center right a:hover {
-	background-color: rgba(0, 0, 0, 0.95);
-}
-
-section4 {
-	display: flex;
-	height: 100%;
-	width: 100%;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
-	margin-bottom: 200px;
-	background-color: #f2f2f2;
 }
 
-section4 center {
+section1 top column text {
 	display: flex;
-	height: 100%;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+section1 bottom {
+	display: flex;
 	width: 100%;
 	max-width: 1200px;
 	flex-direction: column;
-	padding-inline: 50px;
-	padding-block: 25px;
+	padding-inline: 100px;
 	gap: 25px;
-	align-items: center;
 }
 
-section4 center top {
-	display: flex;
-	width: 100%;
-	flex-grow: 1;
-	flex-shrink: 1;
-	gap: 100px;
-}
-
-section4 center top side {
-	display: flex;
-	flex-grow: 1;
-	flex-basis: 0;
-}
-
-section4 center top side.left {
-	justify-content: flex-end;
-}
-
-section4 center top side partner {
-	display: grid;
-	height: 100%;
-	width: fit-content;
-	max-width: 100%;
-	flex-direction: column;
-	gap: 10px;
-}
-
-section4 center top side partner column {
-	display: flex;
-	flex-direction: column;
-}
-
-section4 center top side partner column row {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-section4 center top side partner column row name {
+section1 bottom title {
 	display: flex;
 	font-family: "Marcellus";
-	font-size: 25px;
+	font-size: 35px;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 1.0);
 }
 
-section4 center top side partner column row separator {
+section1 bottom column {
+	display: flex;
+	flex-direction: column;
+	padding-inline: 100px;
+	gap: 10px;
+	padding-block: 25px;
+}
+
+section1 bottom column row {
+	display: flex;
+	gap: 10px;
+}
+
+section1 bottom column row title {
+	display: flex;
+	padding: 0;
+	font-family: "Marcellus";
+	font-size: 30px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+section1 bottom column row separator {
 	display: flex;
 	font-family: "Poppins";
 	font-size: 18px;
@@ -454,16 +234,7 @@ section4 center top side partner column row separator {
 	color: rgba(0, 0, 0, 1.0);
 }
 
-section4 center top side partner column row info {
-	display: flex;
-	font-family: "Poppins";
-	font-size: 18px;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 1.0);
-	text-transform: uppercase;
-}
-
-section4 center top side partner column role {
+section1 bottom column text {
 	display: flex;
 	font-family: "Poppins";
 	font-size: 18px;
@@ -471,24 +242,11 @@ section4 center top side partner column role {
 	color: rgba(0, 0, 0, 1.0);
 }
 
-section4 center top side partner person {
-	display: flex;
-	max-width: fit-content;
-	flex-grow: 1;
-	flex-shrink: 1;
-}
-
-section4 center top side partner person img {
-	display: flex;
-	min-height: 100%;
-	max-height: 100%;
-	object-fit: contain;
-}
-
-section4 center a {
+section1 bottom a {
 	display: flex;
 	height: fit-content;
 	width: fit-content;
+	margin-inline: auto;
 	padding-inline: 30px;
 	padding-block: 10px;
 	font-family: "Marcellus";
@@ -502,7 +260,7 @@ section4 center a {
 	transition-duration: 0.2s;
 }
 
-section4 center a:hover {
+section1 bottom a:hover {
 	background-color: rgba(0, 0, 0, 0.95);
 }
 
