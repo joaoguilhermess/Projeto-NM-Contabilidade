@@ -1,0 +1,84 @@
+header top {
+	flex-direction: column;
+	gap: 25px;
+}
+
+header top logo {
+	margin-left: 0px;
+	transform: none;
+}
+
+header top a {
+	margin-left: 0px;
+	width: 100%;
+	justify-content: center;
+}
+
+header bottom {
+	flex-direction: column;
+	gap: 50px;
+}
+
+header bottom left a {
+	width: 100%;
+	justify-content: center;
+}
+
+header bottom right column row {
+	flex-direction: column;
+	gap: 25px;
+}
+
+header bottom right column row a {
+	min-width: none;
+	max-width: none;
+}
+
+section2 center a {
+	width: 100%;
+	justify-content: center;
+}
+
+section3 center {
+	flex-direction: column;
+}
+
+section3 center right a {
+	width: 100%;
+	justify-content: center;
+}
+
+section4 {
+	height: fit-content;
+}
+
+section4 center top {
+	flex-direction: column;
+}
+
+section4 center top side {
+	flex-grow: 0;
+	flex-basis: auto;
+}
+
+section4 center top side partner person {
+	width: 100%;
+	max-width: none;
+	justify-content: center;
+}
+
+section4 center top side partner person img {
+	width: 100%;
+}
+
+footer center {
+	grid-template-columns: 1fr;
+}
+
+footer center left {
+	grid-row: 2;
+}
+
+footer center right {
+	justify-content: flex-start;
+}

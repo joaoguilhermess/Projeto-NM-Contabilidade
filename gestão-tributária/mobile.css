@@ -1,0 +1,67 @@
+header top {
+	flex-direction: column;
+	gap: 25px;
+}
+
+header top logo {
+	margin-left: 0px;
+	transform: none;
+}
+
+header top a {
+	margin-left: 0px;
+	width: 100%;
+	justify-content: center;
+}
+
+header bottom {
+	flex-direction: column;
+	gap: 50px;
+}
+
+header bottom left a {
+	width: 100%;
+	justify-content: center;
+}
+
+header bottom right column row {
+	flex-direction: column;
+	gap: 25px;
+}
+
+header bottom right column row a {
+	min-width: none;
+	max-width: none;
+}
+
+section1 top {
+	padding-inline: 50px;
+}
+
+section1 bottom {
+	padding-inline: 50px;
+}
+
+section1 bottom column {
+	padding-inline: 0px;
+}
+
+section1 bottom column row title:last-child {
+	flex-shrink: 1;
+}
+
+section1 bottom a {
+	text-align: center;
+}
+
+footer center {
+	grid-template-columns: 1fr;
+}
+
+footer center left {
+	grid-row: 2;
+}
+
+footer center right {
+	justify-content: flex-start;
+}
