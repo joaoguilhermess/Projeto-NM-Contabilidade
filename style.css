@@ -316,19 +316,17 @@ section3 center left {
 	height: 100%;
 	flex-grow: 1;
 	flex-basis: 0;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
-	background-color: rgba(255, 0, 0, 0.25);
 }
 
 section3 center left img {
 	display: flex;
 	max-height: 100%;
+	height: 100%;
 	max-width: 100%;
-	flex-grow: 1;
 	object-fit: contain;
 	background-color: rgba(0, 0, 0, 0.95);
-	aspect-ratio: 9/16;
 }
 
 section3 center right {
@@ -372,4 +370,261 @@ section3 center right button {
 
 section3 center right button:hover {
 	background-color: rgba(0, 0, 0, 0.95);
+}
+
+section4 {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+}
+
+section4 center {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	max-width: 1200px;
+	flex-direction: column;
+	padding-inline: 50px;
+	padding-block: 25px;
+	gap: 25px;
+	align-items: center;
+}
+
+section4 center top {
+	display: flex;
+	width: 100%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	gap: 100px;
+}
+
+section4 center top side {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+section4 center top side.left {
+	justify-content: flex-end;
+}
+
+section4 center top side partner {
+	display: grid;
+	height: 100%;
+	width: fit-content;
+	max-width: 100%;
+	flex-direction: column;
+	gap: 10px;
+}
+
+section4 center top side partner column {
+	display: flex;
+	flex-direction: column;
+}
+
+section4 center top side partner column row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+section4 center top side partner column row name {
+	display: flex;
+	font-family: "Marcellus";
+	font-size: 25px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+section4 center top side partner column row separator {
+	display: flex;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+section4 center top side partner column row info {
+	display: flex;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1.0);
+	text-transform: uppercase;
+}
+
+section4 center top side partner column role {
+	display: flex;
+	width: fit-content;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+section4 center top side partner person {
+	display: flex;
+	max-width: fit-content;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+section4 center top side partner person img {
+	display: flex;
+	min-height: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+section4 center button {
+	display: flex;
+	height: fit-content;
+	width: fit-content;
+	padding-inline: 30px;
+	padding-block: 10px;
+	font-family: "Marcellus";
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
+	background-color: #483d39;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+section4 center button:hover {
+	background-color: rgba(0, 0, 0, 0.95);
+}
+
+footer {
+	display: flex;
+	height: fit-content;
+	width: 100%;
+	justify-content: center;
+	background-color: #38312e;
+}
+
+footer center {
+	display: grid;
+	height: fit-content;
+	width: 100%;
+	max-width: 1200px;
+	padding-inline: 50px;
+	padding-block: 50px;
+	gap: 50px;
+	grid-template-columns: 1fr auto 1fr;
+}
+
+footer center left {
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	gap: 25px;
+}
+
+footer center left title {
+	display: flex;
+	font-family: "Poppins";
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+}
+
+footer center left column {
+	display: flex;
+	flex-direction: column;
+}
+
+footer center left column text {
+	user-select: all;
+	display: flex;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
+}
+
+footer center middle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+}
+
+footer center middle icon {
+	display: flex;
+}
+
+footer center middle icon img {
+	display: flex;
+	min-height: 100px;
+	max-height: 100px;
+}
+
+footer center middle logo {
+	display: flex;
+}
+
+footer center middle logo img {
+	display: flex;
+	min-height: 50px;
+	max-height: 50px;
+}
+
+footer center middle title {
+	display: flex;
+	font-family: "Poppins";
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+}
+
+footer center middle column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer center middle column text {
+	user-select: all;
+	display: flex;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
+}
+
+footer center right {
+	display: flex;
+	padding-top: 50px;
+	justify-content: flex-end;
+}
+
+footer center right column {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+footer center right column title {
+	display: flex;
+	font-family: "Poppins";
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+}
+
+footer center right column text {
+	user-select: all;
+	display: flex;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1.0);
 }
