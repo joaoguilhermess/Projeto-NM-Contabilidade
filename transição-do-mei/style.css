@@ -49,20 +49,21 @@ header top {
 	/*padding-block: 25px;*/
 }
 
-header top logo {
+header top a.logo {
 	display: flex;
 	margin-left: 50%;
 	transform: translateX(-50%);
+	cursor: pointer;
 }
 
-header top logo img {
+header top a.logo img {
 	display: flex;
 	min-height: 50px;
 	max-height: 50px;
 	object-fit: contain;
 }
 
-header top a {
+header top a.button {
 	display: flex;
 	height: fit-content;
 	width: fit-content;
@@ -83,7 +84,7 @@ header top a {
 	transition-duration: 0.2s;
 }
 
-header top a:hover {
+header top a.button:hover {
 	border-color: #483d39;
 	background-color: #483d39;
 }
