@@ -40,7 +40,7 @@ header {
 	padding-block: 25px;
 	gap: 50px;
 	background-color: rgba(0, 0, 0, 0.95);
-	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url("../images/background2.jpeg");
+	background-image: linear-gradient(90deg, rgba(56, 49, 46, 0.9)), url("../images/background3.jpeg");
 	background-repeat: no-repeat, no-repeat;
 	background-size: cover, cover;
 	background-position: center center, center 0px;
